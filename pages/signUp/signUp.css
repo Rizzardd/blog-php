@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(130, 46, 82);
+  margin: 0;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-card-form img {
+  width: 25vw;
+  border-top-left-radius: 0.5rem; /* 8px */
+  border-top-right-radius: 0.5rem; /* 8px */
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  background: rgb(250, 233, 205);
+  width: 25vw;
+  height: 39vw;
+  border-radius: 8px;
+}
+
+.title {
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title h1 {
+  font-size: 20px;
+  font-family: "Space Mono";
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2vw;
+}
+
+form .label-name {
+  font-family: "Space Mono";
+  width: 100%;
+  font-size: 20px;
+  margin-top: 2vw;
+}
+
+form input {
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 2vw;
+}
+
+form .label-password {
+  font-family: "Space Mono";
+  width: 100%;
+  font-size: 20px;
+  margin-top: 2vw;
+}
+
+.btn {
+  margin-top: 2vw;
+  width: 8vw;
+  background-color: rgb(116, 41, 74);
+  color: white;
+  font-family: "Space Mono";
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: rgb(154, 54, 98);
+}
+
+@media (max-width: 780px) {
+  .main-section {
+    width: fit-content;
+  }
+
+  form {
+    width: 80vw;
+  }
+
+  form input {
+    width: 100%;
+    height: 9vw;
+  }
+
+  .img-card-form img {
+    width: 100%;
+  }
+
+  .card-form {
+    background: rgb(250, 233, 205);
+    width: 95vw;
+    height: 150vw;
+  }
+
+  .btn {
+    margin-top: 8vw;
+    height: 10vw;
+    width: 30vw;
+    
+  }
+}
